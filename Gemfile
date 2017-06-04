@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+ruby '2.4.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.1'
 # Use postgresql as the database for Active Record
@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.5'
 # CMS Gems
 gem 'camaleon_cms'
 gem 'activemodel-serializers-xml', git: 'https://github.com/rails/activemodel-serializers-xml'
-gem 'draper', github: 'audionerd/draper', branch: 'rails5'
+gem 'draper'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
